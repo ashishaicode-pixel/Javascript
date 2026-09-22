@@ -1,0 +1,73 @@
+<!Doctype html>
+<html>
+
+<head>
+  <Title>1st Project in JS</Title>
+</head>
+
+<body>
+  <Script>
+    let Student = {
+      name: 'Sourav',
+      age: 20,
+      attendance: 85,
+      marks: 80
+    };
+
+    function studentStatus() {
+      console.log(`Name: ${Student.name}`);
+      console.log(`Marks: ${Student.marks}`);
+      console.log(`Attendance: ${Student.attendance}%`);
+
+    }
+
+    function passOrFail() {
+      if (Student.marks >= 40 && Student.marks <= 100) {
+        return `Result: Pass`;
+      }
+      else if (Student.marks >= 0 && Student.marks <= 39) {
+        return `Result: Fail`;
+      }
+      else {
+        return 'Invalid Input';
+      }
+    }
+
+    function grade() {
+      if (Student.marks >= 80 && Student.marks <= 100) {
+        return `Grade: A`;
+      }
+      else if (Student.marks >= 60 && Student.marks < 80) {
+        return `Grade: B`;
+      }
+      else if (Student.marks >= 40 && Student.marks < 60) {
+        return `Grade: C`;
+      }
+      else if (Student.marks >= 0 && Student.marks < 40) {
+        return `Grade: F`;
+      }
+      else {
+        return `!!!Invalid Marks Enter Btw 0 to 100!!!`
+      }
+
+    }
+    function attendance() {
+      if (Student.attendance >= 70) {
+        return `Attendance: Eligible`;
+      }
+      else {
+        return `Attendance: Not Eligible`;
+      }
+    }
+    function overallStatus() {
+      return `Student `
+    }
+    studentStatus();
+    console.log(passOrFail());
+    console.log(grade());
+    console.log(attendance());
+
+  </Script>
+</body>
+
+</html>
